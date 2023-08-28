@@ -1,0 +1,15 @@
+from collections import defaultdict
+
+for _ in range(int(input())):
+    a = int(input())
+    arr1 = list(map(int, input().split()))
+    arr2 = list(map(int, input().split()))
+    
+    ingredient_freq = defaultdict(int)  # Dictionary to store ingredient frequency
+    
+    for ingredient in arr1 + arr2:
+        ingredient_freq[ingredient] += 1
+    
+    max_freq = max(ingredient_freq.values())  # Find maximum frequency
+    
+    print(max_freq)

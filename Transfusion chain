@@ -1,0 +1,24 @@
+In living donation, the following blood types are compatible:
+
+Blood type A donors can donate to recipients with blood types A and AB.
+Blood type B donors can donate to recipients with blood types B and AB.
+Blood type AB donors can donate to recipients with blood type AB only.
+Blood type O donors can donate to recipients with blood types A, B, AB and O.
+There are N people in a hospital where the blood type of the ℎi th person is denoted by Bi. Note that the value of Bi can be A, B, AB, or O only.
+A chain is formed when a donor can donate blood to a recipient, who in turn can donate blood to another recipient, and so on.
+
+Find the maximum number of people that can form a chain of blood transfusions.
+
+# cook your dish here
+for _ in range(int(input())):
+    n = int(input())
+    arr1 = list(map(str, input().split()))
+    a_group = arr1.count("A")
+    b_group = arr1.count("B")
+    ab_group = arr1.count("AB")
+    o_group = arr1.count("O")
+    
+    chain = max(a_group,b_group)
+    chain = chain + ab_group + o_group
+    print(chain)
+    

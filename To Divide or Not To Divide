@@ -1,0 +1,17 @@
+Alice likes all the numbers which are divisible by A. 
+Bob does not like the numbers which are divisible by B and likes all the remaining numbers. 
+Determine the smallest number greater than or equal to N which is liked by both Alice and Bob. 
+Output −1 if no such number exists.
+
+# cook your dish here
+for i in range(int(input())):
+    A,B,N = map(int,input().split())
+    temp = N - (N%A) 
+    if A%B == 0:
+        print(-1)
+    else:
+        if N%A != 0:
+            temp+=A
+        if temp%B == 0:
+            temp+=A
+        print(temp)

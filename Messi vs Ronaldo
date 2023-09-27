@@ -1,0 +1,18 @@
+In Chefland, a football player gets 2 points for each goal and 1 point for each assist.
+
+Messi has A goals and B assists this season, whereas Ronaldo has X goals and Y assists.
+Find out the player with more points this season.
+
+Input Format:
+The first and only line of input will contains four space-separated integers A, B, X and Y, the number of goals and assists that Messi has and the number of goals and assists that Ronaldo has, respectively.
+
+# cook your dish here
+A,B,X,Y = map(int, input().split())
+A*=2
+X*=2
+if X+Y == A+B:
+    print("Equal")
+elif X+Y > A+B:
+    print("Ronaldo")
+else:
+    print("Messi")

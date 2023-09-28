@@ -1,0 +1,23 @@
+Rachel has a date and tells everyone she is not mad at Ross but doesn't have any feelings for him anymore either. Seeing her date for the first time, everyone notices that he looks exactly like Ross. However, Rachel refuses to believe so.
+Rachel makes a list of N characteristics and assigns a score to both Ross and Russ for each of the characteristics. Ross' ℎith characteristic has a score equal to Ai and Russ' ℎith characteristic has a score equal to Bi. Rachel decides that Russ looks exactly like Ross if the following condition is satisfied for at least X distinct values of j, 1≤≤1≤j≤N :∣−∣≤∣A j−B j∣≤K.
+Help Rachel in finding if both are alike.
+
+Input Format
+First line will contain T, number of testcases. Then the testcases follow.
+First line for each test case contains three integers N, X and K, denoting the number of characteristics, the minimum number of characteristics and maximum possible score difference.
+Second line for each test case contains N integers denoting array A. 
+Third line for each test case contains N integers denoting array B.
+
+# cook your dish here
+for _ in range(int(input())):
+    N,X,K = map(int,input().split())
+    Ross = list(map(int,input().split()))
+    Russ = list(map(int,input().split()))
+    c = 0
+    for i,j in zip(Ross,Russ):
+        if abs(i-j)<=K:
+            c+=1
+    if c >= X:
+        print("YES")
+    else:
+        print("NO")

@@ -4,7 +4,7 @@ Limak is going to spend N minutes in the kitchen. Each minute he either eats a c
 
 You are given whether he ate a cookie or drank milk in each of the N minutes. Your task is to check if Limak followed his parents' instructions. That is, you need to verify whether after each eaten cookie he drinks milk in the next minute. Print "YES" or "NO" for each test case accordingly.
 
-Input
+Input:
 The first line of the input contains an integer T denoting the number of test cases. The description of T test cases follows.
 
 The first line of each test case contains an integer N denoting the number of minutes.

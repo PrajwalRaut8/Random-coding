@@ -5,7 +5,7 @@ Chef considers the number 7 lucky. As a result, he believes that the 7-th letter
 You are given a string S of length 10, denoting the first 10 letters Chef saw today.
 What is Chef's lucky letter?
 
-Input Format
+Input Format:
 
 The only line of input contains a string S, of length 10.
 

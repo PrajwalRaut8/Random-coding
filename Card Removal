@@ -1,0 +1,23 @@
+Problem
+You have N cards placed in front of you on the table. The ith card has the number Ai written on it.
+
+In one move, you can remove any one card from the remaining cards on the table.
+
+Find the minimum number of moves required so that all the cards remaining on the table have the same number written on them.
+
+Input Format
+The first line contains a single integer T — the number of test cases. Then the test cases follow.
+The first line of each test case contains an integer N — the number of cards on the table.
+The second line of each test case contains N space-separated integers A1,A2,…,AN where Ai is the number written on the ith card.
+
+# cook your dish here
+for i in range(int(input())):
+    n = int(input())
+    arr1 = list(map(int,input().split()))
+    c = 0
+    max_num = 0
+    for j in arr1:
+        c = arr1.count(j)
+        max_num = max(max_num,c)
+    
+    print(n - max_num)
